@@ -1,8 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -14,10 +17,11 @@ namespace Project.Controllers
     public class EnrollmentsController : Controller
     {
         private readonly ProjectContext _context;
-
+        //private readonly IWebHostEnvironment _webHostEnvironment;
         public EnrollmentsController(ProjectContext context)
         {
             _context = context;
+            //_webHostEnvironment = webHostEnvironment;
         }
 
         // GET: Enrollments

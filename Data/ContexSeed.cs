@@ -36,7 +36,7 @@ namespace Project.Data
                     PhoneNumberConfirmed = true
                 };
 
-                await userManager.CreateAsync(defaultSuperAdmin, "SuperAdmin925;");
+                await userManager.CreateAsync(defaultSuperAdmin, "SuperAdmin123@");
                 await userManager.AddToRoleAsync(defaultSuperAdmin, "Student");
                 await userManager.AddToRoleAsync(defaultSuperAdmin, "Teacher");
                 await userManager.AddToRoleAsync(defaultSuperAdmin, "Admin");
@@ -58,7 +58,7 @@ namespace Project.Data
                     PhoneNumberConfirmed = true
                 };
 
-                await userManager.CreateAsync(defaultAdmin, "Admin925;");
+                await userManager.CreateAsync(defaultAdmin, "Admin123;");
                 await userManager.AddToRoleAsync(defaultAdmin, "Admin");
             }
         }
